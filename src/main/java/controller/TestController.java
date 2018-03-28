@@ -41,12 +41,10 @@ public class TestController {
     @RequestMapping("/userData")
     @ResponseBody
     @SneakyThrows
-    public void userData(HttpServletRequest request,HttpServletResponse response){
+    public List<Book> userData(){
         HashMap<String, Object> map = Maps.newHashMap();
         List<Book> list = shareService.findShare(map);
-        String [] properties = {"bookId","name","number"};
-        ExcelUtil.exportExcel("导出列表.xlsx",properties,list,request,response,"yyyy-MM-dd",Book.class);
-//        return list;
+        return list;
     }
 
 
