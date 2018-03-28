@@ -38,6 +38,10 @@ public class TestController {
     @Autowired
     private JedisCluster jedisCluster;
 
+    /**
+     * 获取数据
+     * @return
+     */
     @RequestMapping("/userData")
     @ResponseBody
     @SneakyThrows
