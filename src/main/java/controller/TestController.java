@@ -51,7 +51,10 @@ public class TestController {
         return list;
     }
 
-
+    /**
+     * 主页
+     * @return
+     */
     @RequestMapping("/index")
     public String index(){
         return "index_v1";
