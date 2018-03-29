@@ -39,7 +39,7 @@ public class TestController {
     private JedisCluster jedisCluster;
 
     /**
-     * 获取数据
+     * 获取数据合并分支
      * @return
      */
     @RequestMapping("/userData")
