@@ -27,16 +27,6 @@ function passTable() {
             field: 'number',
             title: '提交时间',
         }
-            // formatter : date_format_YY_MM_DD
-        // }, {
-        //     field: 'action',
-        //     title: '操作',
-        //     align :'center',
-        //     formatter: function (value, data, index) {
-        //         var action = '<a class="btn mini red" href="javaScript:void(0);" onclick=InitApplyInfoManagePassDenyDialog("' + index + '") ><i class="icon-ban-circle"></i>拒绝</a>';
-        //         action = action + '&nbsp;|&nbsp;<a class ="btn mini green" href="javaScript:void(0);" onclick=InitApplyInfoManagePassUpdateDialog("' + index + '")><i class="icon-edit">修改</i></a>';
-        //         return action;
-        //     }
         ]]
     });
 }
