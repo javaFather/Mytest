@@ -10,10 +10,10 @@ import lombok.ToString;
  * @author wangzx
  */
 public class Book {
-    @XlsHeader("图书ID*")
+    @XlsHeader("图书ID")
     private long bookId;
-    @XlsHeader("图书名称*")
+    @XlsHeader("图书名称")
     private String name;
-    @XlsHeader("馆藏数量*")
+    @XlsHeader("馆藏数量")
     private Integer number;
 }

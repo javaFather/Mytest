@@ -20,7 +20,7 @@ import java.util.Iterator;
 /**
  * @author: wangzx
  * @Date: 2018-03-28-14:53
- *
+ *TODO 用法
  String [] properties = {"bookId","name","number"};
 *ExcelUtil.exportExcel("导出列表.xlsx",properties,list,request,response,"yyyy-MM-dd",Book.class);
  */
