@@ -13,6 +13,11 @@
         <lcn.last.version>4.1.0</lcn.last.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>com.soecode.ssm</groupId>
+            <artifactId>ssm</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <!-- 单元测试 -->
         <dependency>
             <groupId>junit</groupId>
