@@ -1,11 +1,10 @@
 package impl;
 
-import com.google.common.collect.Maps;
 import dao.ShareMapper;
 import domain.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import service.ShareService;
+import service.CustomerShareService;
 
 import java.util.List;
 import java.util.Map;
@@ -14,7 +13,7 @@ import java.util.Map;
  * @author wangzx
  */
 @Service
-public class ShareServiceImpl implements ShareService {
+public class CustomerShareServiceImpl implements CustomerShareService {
     @Autowired
     private ShareMapper shareMapper;
 @Override

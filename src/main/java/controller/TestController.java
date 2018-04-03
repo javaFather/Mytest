@@ -1,28 +1,18 @@
 package controller;
 
-import com.alibaba.fastjson.JSON;
-import com.google.common.collect.Lists;
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.google.common.collect.Maps;
-import com.sun.deploy.net.HttpResponse;
-import common.Excel.ExcelUtil;
 import domain.Book;
-import impl.MailServiceImpl;
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import redis.clients.jedis.JedisCluster;
 import service.MailService;
-import service.ShareService;
+import service.CustomerShareService;
 import vo.MailVo;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 @Controller
@@ -32,11 +22,15 @@ import java.util.List;
  */
 public class TestController {
     @Autowired
-    private ShareService shareService;
+    private CustomerShareService customerShareService;
     @Autowired
     private MailService mailService;
+
     @Autowired
     private JedisCluster jedisCluster;
+
+    @Reference
+//    ShareService shareService;
 
     /**
      * 获取数据
@@ -47,7 +41,7 @@ public class TestController {
     @SneakyThrows
     public List<Book> userData(){
         HashMap<String, Object> map = Maps.newHashMap();
-        List<Book> list = shareService.findShare(map);
+        List<Book> list = customerShareService.findShare(map);
         return list;
     }
 

@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * @author wangzx
  */
-public interface ShareService {
+public interface CustomerShareService {
     /**
      * 查询单个信息
      * @author wangzx
