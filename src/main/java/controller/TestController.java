@@ -5,12 +5,14 @@ import com.google.common.collect.Maps;
 import domain.Book;
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import redis.clients.jedis.JedisCluster;
 import service.MailService;
 import service.CustomerShareService;
+import service.ShareService;
 import vo.MailVo;
 
 import java.util.HashMap;
@@ -30,7 +32,7 @@ public class TestController {
     private JedisCluster jedisCluster;
 
     @Reference
-//    ShareService shareService;
+    ShareService shareService;
 
     /**
      * 获取数据
