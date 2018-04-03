@@ -1,10 +1,9 @@
 package impl;
 
-import com.google.common.collect.Maps;
+import com.alibaba.dubbo.config.annotation.Service;
 import dao.ShareMapper;
 import domain.Book;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import service.ShareService;
 
 import java.util.List;
