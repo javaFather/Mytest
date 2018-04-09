@@ -12,7 +12,7 @@ import java.util.Map;
 /**
  * @author wangzx
  */
-@Service
+@Service(timeout = 5000)
 public class ShareServiceImpl implements ShareService {
     @Autowired
     private ShareMapper shareMapper;

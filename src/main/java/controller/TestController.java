@@ -30,8 +30,8 @@ import java.util.List;
  * @author wangzhenxing
  */
 public class TestController {
-    @Autowired
-    private ShareService shareService;
+//    @Autowired
+//    private ShareService shareService;
     @Autowired
     private MailService mailService;
     @Autowired
@@ -41,14 +41,14 @@ public class TestController {
      * 获取数据合并分支sssssss
      * @return
      */
-    @RequestMapping("/userData")
-    @ResponseBody
-    @SneakyThrows
-    public List<Book> userData(){
-        HashMap<String, Object> map = Maps.newHashMap();
-        List<Book> list = shareService.findShare(map);
-        return list;
-    }
+//    @RequestMapping("/userData")
+//    @ResponseBody
+//    @SneakyThrows
+//    public List<Book> userData(){
+//        HashMap<String, Object> map = Maps.newHashMap();
+//        List<Book> list = shareService.findShare(map);
+//        return list;
+//    }
 
     /**
      * 主页
